@@ -1,0 +1,135 @@
+/* 
+
+-------------------------------------------------------------
+
+FEATURING
+
+*/
+
+.featuring {
+	text-align:center;
+	position:relative;
+	z-index:0;
+
+	.brush {
+		@extend .position-center;
+		width:1100px;
+		bottom:auto;
+		top:-160px;
+
+		@include breakpoint(large) { 
+			width:900px;
+			top:-100px;
+		}
+
+		@include breakpoint(medium) { 
+			width:700px;
+			top:0px;
+		}
+
+		@include breakpoint(small) { 
+			width:90%; 
+			top:auto;
+		}
+	}
+
+	a {
+		display:inline-block;
+		position:relative;
+		font-family:$heading-font-family;
+		font-size:80px;
+		line-height:60px;
+		background:$black;
+		padding:0px 5px;
+		padding-top:11px;
+		color:$gray-light;
+		margin-bottom:8px;
+		text-transform:uppercase;
+
+		@include breakpoint(medium) { 
+			font-size:60px;
+			line-height:50px;
+			padding-top:8px;
+		}
+
+		@include breakpoint(small) { 
+			font-size:40px;
+			line-height:35px;
+			padding-top:7px;
+		}
+
+		.label {
+			display:inline-block;
+			position:absolute;
+			top:0px;
+			right:-300px;
+			width:300px;
+			font-family:$body-font-family; 
+			font-size:12px;
+			text-align:left;
+
+			@include breakpoint(small) { display:none; }
+
+			span {
+				@include transition(all 0.3s);
+				display:inline-block;
+				background:$black;
+				line-height:71px;
+				padding:0px 25px;
+				letter-spacing:2px;
+				vertical-align:top;
+
+				@include breakpoint(medium) { 
+					line-height:58px;
+					font-size:10px;
+				}
+			}
+		}
+
+		.label-left {
+			right:auto;
+			left:-300px;
+			text-align:right;
+		}
+	}
+
+	span.more {
+		display:inline-block;
+		font-family:$body-font-family; 
+		text-transform:uppercase;
+		font-size:12px;
+		line-height:71px;
+		background:$black;
+		padding:0px 20px;
+		letter-spacing:2px;
+		color:$gray-light;
+
+		@include breakpoint(medium) { 
+			line-height:58px;
+			font-size:10px;
+		}
+
+		@include breakpoint(small) { 
+			line-height:42px;
+			font-size:10px;
+		}
+	}
+
+	a:hover {
+		background:lighten($black, 20%);
+
+		.label {
+			span { 
+				padding:0px 35px;
+				color:$blue;
+				background:lighten($black, 20%); 
+			}
+		}
+	}
+
+	h4 { margin-bottom:25px; }
+}
+
+.animate-in {
+
+}

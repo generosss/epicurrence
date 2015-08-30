@@ -1,0 +1,71 @@
+/* 
+
+-------------------------------------------------------------
+
+TYPOGRAPHY
+
+*/
+
+body { 
+	font-family:$body-font-family; 
+	font-weight:$body-font-weight;
+	font-size:$body-font-size;
+	color:$body-font-color;
+	line-height:$body-line-height;
+
+	@include breakpoint(large) {
+		font-size:14px;
+		line-height:26px;
+	}
+}
+
+h1, h2, h3, h4 {
+	font-family:$heading-font-family;
+	font-weight:$regular;
+	color:$black;
+	text-transform:uppercase;
+	margin:0px;
+}
+
+h1 {
+
+}
+
+h2 {
+	font-size:70px;
+	line-height:70px;
+
+	@include breakpoint(small) {
+		font-size:40px;
+		line-height:40px;
+	}
+}
+
+h3 {
+
+}
+
+h4 {
+	font-family:$body-font-family; 
+	font-weight:$bold;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	font-size:12px;
+	line-height:40px;
+
+	@include breakpoint(medium) { font-size:11px; }
+
+	span { color:$green; }
+}
+
+a {
+	@include transition(all 0.3s);
+	text-decoration:none;
+	color:$black;
+
+	img { border:none; }
+}
+
+a:hover {
+	color:lighten($black, 50%);
+}

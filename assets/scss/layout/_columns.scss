@@ -1,0 +1,79 @@
+/* 
+
+-------------------------------------------------------------
+
+COLUMNS
+
+*/
+
+$gutter  : 2.66%;
+
+.row {
+	@include clearfix;
+}
+
+.col-2 {
+	@extend .borderbox;
+	width:550px / 1200px * 100%;
+	float:right;
+	position:relative;
+
+	@include breakpoint(medium) { 
+		width:100%;
+		float:none;
+	}
+}
+
+.col-2:first-child {
+	float:left;
+
+	@include breakpoint(medium) { 
+		width:100%; 
+		float:none;
+		margin:0%;
+	}
+}
+
+.col-3 {
+	@extend .borderbox;
+	float:left;
+	width:378px / 1200px * 100%;
+	margin-left:$gutter;
+
+	@include breakpoint(small) { 
+		width:100%; 
+		float:none;
+		margin:0%;
+	}
+}
+
+.col-3:first-child {
+	margin-left:0%;
+}
+
+.col-4 {
+	@extend .borderbox;
+	float:left;
+	width:275px / 1200px * 100%;
+	margin-left:$gutter;
+
+	@include breakpoint(small) { 
+		width:100%; 
+		float:none;
+		margin:0%;
+	}
+}
+
+.col-4:first-child {
+	margin-left:0%;
+}
+
+.col-center {
+	width:65.8333%;
+	margin:auto;
+
+	@include breakpoint(small) { 
+		width:100%; 
+		margin:0%;
+	}
+}

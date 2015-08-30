@@ -1,0 +1,84 @@
+/* 
+
+-------------------------------------------------------------
+
+TYPOGRAPHY
+
+*/
+
+@font-face {
+  font-family: $heading-font-family;
+  src: url('../fonts/2C10B3_0_0.eot');
+  src: url('../fonts/2C10B3_0_0.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/2C10B3_0_0.woff') format('woff'),
+       url('../fonts/2C10B3_0_0.ttf') format('truetype');
+}
+
+body { 
+	font-family:$body-font-family; 
+	font-weight:$body-font-weight;
+	font-size:$body-font-size;
+	color:$body-font-color;
+	line-height:$body-line-height;
+
+	@include breakpoint(large) {
+		font-size:14px;
+		line-height:26px;
+	}
+}
+
+h1, h2, h3, h4 {
+	font-family:$heading-font-family;
+	font-weight:$regular;
+	color:$black;
+	text-transform:uppercase;
+	margin:0px;
+}
+
+h2 {
+	font-size:50px;
+	line-height:50px;
+
+	@include breakpoint(small) {
+		font-size:40px;
+		line-height:40px;
+	}
+}
+
+h3 {
+	font-family:$heading-font-family;
+	margin-bottom:0px; 
+	letter-spacing:0px;
+	font-size:25px;
+	font-weight:normal;
+}
+
+h4 {
+	font-family:$body-font-family; 
+	font-weight:$bold;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	font-size:12px;
+	line-height:40px;
+
+	@include breakpoint(medium) { font-size:11px; }
+
+	span { color:$green; }
+}
+
+a {
+	@include transition(all 0.3s);
+	text-decoration:none;
+	color:$black;
+
+	img { border:none; }
+}
+
+a:hover { color:lighten($black, 50%); }
+
+.type-line {
+	width:40px;
+	height:3px;
+	background:#000000;
+	margin:20px auto;
+}

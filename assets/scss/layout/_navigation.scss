@@ -1,0 +1,103 @@
+/* 
+
+-------------------------------------------------------------
+
+NAVIGATION
+
+*/
+
+nav.navigation {
+	padding:10px 0px;
+
+	a {
+		color:$black;
+		font-weight:$bold;
+		text-transform:uppercase;
+		letter-spacing:2px;
+		font-size:12px;
+		line-height:40px;
+		margin-right:20px;
+
+		@include breakpoint(medium) { font-size:11px; }
+
+		@include breakpoint(small) { display:none; }
+	}
+
+	a:hover {
+		color:$blue;
+	}
+
+	a.purchase {
+		float:right;
+		font-family:$heading-font-family;
+		font-weight:700;
+		display:inline-block;
+		font-weight:$regular;
+		background:$black;
+		font-size:26px;
+		line-height:32px;
+		letter-spacing:0px;
+		padding:0px 7px;
+		padding-top:4px;
+		margin-right:0px;
+		color:$white;
+
+		@include breakpoint(small) { 
+			font-size:18px;
+			margin-right:10px;
+		}
+	}
+
+	.menu-button {
+		@include transition(all 0.75s $easeOutQuint);
+		@extend .position-center;
+		display:none;
+		width:30px;
+		height:20px;
+		right:auto;
+		left:15px;
+
+		@include breakpoint(small) { 
+			display:block;
+		}
+
+		a {
+			width:30px;
+			display:block;
+			height:20px;
+		}
+
+		span, span:before, span:after {
+			@include transition(all 0.75s $easeOutQuint);
+			position:absolute;
+			top:10px;
+			left:0px;
+			display:block;
+			height:2px;
+			width:30px;
+			background:#888888;
+			content:"";
+		}
+
+		span:before { top:-6px; }
+
+		span:after { top:6px; }
+	}
+}
+
+/* Modal Open */
+.body-modal-open {
+	nav.navigation {
+		.menu-button {
+
+			span { @include transform(rotate(45deg)); }
+
+			span:before { top:0px; }
+
+			span:after { 
+				@include transform(rotate(-90deg));
+				top:0px; 
+			}
+		}
+	}
+}

@@ -1,0 +1,35 @@
+/* 
+
+-------------------------------------------------------------
+
+ABOUT
+
+*/
+
+.about {
+	padding:100px 0px;
+
+	@include breakpoint(small) { text-align:center; }
+
+	ul {
+		list-style:none;
+		margin:0px;
+		padding:0px;
+		text-transform:uppercase;
+		letter-spacing:2px;
+		font-size:13px;
+
+		@include breakpoint(medium) { font-size:12px; }
+	}
+
+	.type-line {
+		margin-left:0px;
+		margin:20px 0px;
+		margin-bottom:40px;
+
+		@include breakpoint(small) {
+			margin:20px auto;
+			margin-bottom:40px;
+		}
+	}
+}

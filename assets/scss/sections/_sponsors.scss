@@ -1,0 +1,51 @@
+/* 
+
+-------------------------------------------------------------
+
+SPONSORS
+
+*/
+
+.sponsors {
+	padding-bottom:100px;
+	position:relative;
+	z-index:5;
+	text-align:center;
+
+	@include breakpoint(medium) { padding-bottom:80px; }
+
+	@include breakpoint(small) { padding-bottom:40px; }
+
+	.row {
+		border:1px solid #000000;
+	}
+
+	.sponsor {
+		display:inline-block;
+		width:15%;
+		margin:10px 0px;
+
+		@include breakpoint(small) { 
+			margin:10px auto;
+			width:50%;
+			float:left;
+		}
+	}
+
+	.sponsor-large {
+		width:25%;
+		border:1px solid #000000;
+
+		@include breakpoint(small) { 
+			margin:10px auto;
+			width:100%;
+			float:none;
+		}
+	}
+
+	.sponsor:hover { opacity:0.5; }
+}
+
+.animate-in {
+
+}

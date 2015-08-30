@@ -1,0 +1,30 @@
+/* 
+
+-------------------------------------------------------------
+
+MODAL
+
+*/
+
+.modal {
+	@include transition(all 0.75s $easeOutQuint);
+	position:fixed;
+	height:100%;
+	width:100%;
+	background:rgba(238,238,237,0.98);
+	z-index:200;
+	opacity:0;
+	visibility:hidden;
+	overflow:auto;
+}
+
+.modal-active {
+	-webkit-overflow-scrolling: touch;
+	opacity:1;
+	visibility:visible;
+	&.purchase-ticket {
+		// Needs a higher z-index since it was also being applied to the other modal window --bugsy [april 30]
+		z-index: 300;
+		margin-top: 60px; // Leaves the menu accessible and somehow fixes issue
+	}
+}

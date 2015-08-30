@@ -1,0 +1,128 @@
+//
+// MANIPULATION
+//
+
+@mixin box-shadow($str) {
+  -webkit-box-shadow: $str;
+     -moz-box-shadow: $str;
+      -ms-box-shadow: $str;
+          box-shadow: $str;
+}
+
+@mixin border-radius($str) {
+  -webkit-border-radius: $str;
+     -moz-border-radius: $str;
+      -ms-border-radius: $str;
+          border-radius: $str;
+}
+
+@mixin scale($size) {
+  -webkit-transform: scale($size);
+     -moz-transform: scale($size);
+      -ms-transform: scale($size);
+          transform: scale($size);
+}
+
+@mixin transform($str) {
+  -webkit-transform: $str;
+     -moz-transform: $str;
+      -ms-transform: $str;
+          transform: $str; 
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+//
+// TRANSITIONS
+//
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes $animation-name {
+    @content;
+  }
+  @-moz-keyframes $animation-name {
+    @content;
+  }  
+  @-ms-keyframes $animation-name {
+    @content;
+  }
+  @-o-keyframes $animation-name {
+    @content;
+  }  
+  @keyframes $animation-name {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};      
+}
+
+@mixin animation-delay($delay) {
+  -webkit-animation-delay: $delay;
+  -moz-animation-delay: $delay;
+  -ms-animation-delay: $delay;
+  -o-animation-delay: $delay;
+  animation-delay: $delay;
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin transition-delay($delay) {
+  -webkit-transition-delay: $delay;
+  -moz-transition-delay: $delay;
+  -ms-transition-delay: $delay;
+  -o-transition-delay: $delay;
+  transition-delay: $delay;
+}
+
+
+//
+// BREAK POINTS
+//
+
+@mixin breakpoint($point) {
+  @if $point == xlarge {
+    @media (max-width: 1400px) { @content; }
+  }
+  @else if $point == large {
+    @media (max-width: 1350px) { @content; }
+  }
+  @else if $point == medium {
+    @media (max-width: 960px) { @content; }
+  }
+  @else if $point == small {
+    @media (max-width: 767px)  { @content; }
+  }
+}
+
+@mixin vertical-breakpoint($point) {
+  @if $point == xlarge {
+    @media (max-height:1000px) { @content; }
+  }
+  @else if $point == large {
+    @media (maxmax-height:900px) { @content; }
+  }
+  @else if $point == medium {
+    @media (max-height:800px) { @content; }
+  }
+  @else if $point == small {
+    @media (max-height:400px)  { @content; }
+  }
+}

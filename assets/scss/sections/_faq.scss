@@ -1,0 +1,90 @@
+/* 
+
+-------------------------------------------------------------
+
+FAQ
+
+*/
+
+.faq {
+	@include breakpoint(medium) {
+		text-align:center;
+	}
+
+	.waves {
+		background:url(../img/faq-waves.jpg) top center no-repeat;
+		background-size:cover;
+		height:275px;
+		margin-bottom:60px;
+	}
+
+	.map {
+		height:350px;
+		position:relative;
+
+		.hawaii {
+			position:absolute;
+			left:-300px;
+			top:-150px;
+			width:1800px;
+			z-index:0;
+
+			@include breakpoint(large) { width:1600px; }
+
+			@include breakpoint(small) { 
+				width:1500px; 
+			}
+		}
+
+		.free-flights {
+			width:200px;
+			position:absolute;
+			left:190px;
+			top:55px;
+			z-index:1;
+
+			@include breakpoint(large) { 
+				left:110px;
+				top:85px;
+			}
+
+			@include breakpoint(small) { 
+				left:30px;
+				top:85px;
+			}
+		}
+	}
+
+	.row {
+		margin-bottom:100px;
+		position:relative;
+		z-index:5;
+
+		@include breakpoint(medium) { margin-bottom:60px; }
+	}
+
+	.billabong {
+		@include breakpoint(medium) { padding-top:50px; }
+	}
+
+	b {
+		text-transform:uppercase;
+
+		@include breakpoint(medium) { display:block; }
+	}
+
+	a {
+		font-weight:$bold;
+	}
+	
+	.type-line {
+		margin-left:0px;
+		margin:20px 0px;
+		margin-bottom:40px;
+
+		@include breakpoint(medium) {
+			margin:20px auto;
+			margin-bottom:40px;
+		}
+	}
+}

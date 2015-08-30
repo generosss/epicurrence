@@ -1,0 +1,75 @@
+/* 
+
+-------------------------------------------------------------
+
+FOOTER
+
+*/
+
+footer {	
+	text-transform:uppercase;
+	letter-spacing:2px;
+	font-size:12px;
+	padding:70px 0px;
+	line-height:26px;
+	position:relative;
+
+	@include breakpoint(medium) { text-align:center; }
+
+	@include breakpoint(small) { padding-top:30px; }
+
+	.brush {
+		background:url(../img/bg-footer.jpg) top center no-repeat;
+		background-size:cover;
+		width:110%;
+		height:200px;
+		position:absolute;
+		bottom:-10px;
+		left:-100px;
+		z-index:0;
+
+		@include breakpoint(small) { display:none; }
+	}
+
+	.container {
+		@extend .borderbox;
+		padding-right:140px;
+
+		@include breakpoint(small) { padding:0px; }
+	}
+
+	.share {
+		position:absolute;
+		width:140px;
+		right:0px;
+		top:2px;
+		line-height:11px;
+		height:20px;
+
+		@include breakpoint(small) { 
+			position:relative;
+			left:auto;
+			top:auto;
+			margin:auto;
+		}
+
+		iframe, div {
+			vertical-align:top;
+			width:60px;
+			padding:0px;
+		}
+	}
+
+	b { font-weight:$bold; }
+
+	a {
+		color:$black;
+		font-weight:$bold;
+	}
+
+	a:hover {
+		color:$blue;
+	}
+
+	span { margin:0px 10px; }
+}

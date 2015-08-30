@@ -1,0 +1,40 @@
+/* 
+
+-------------------------------------------------------------
+
+VARIABLES
+
+*/
+
+// Font weights
+$regular : 400;
+$bold    : 700;
+$xbold   : 900;
+
+// Colors
+$white		: #ffffff;
+$gray-light : #eeeeed;
+$black		: #000000;
+$yellow     : #f6ff00;
+$green		: #0f63af;
+$blue		: #0f63af;
+
+// Body Font
+$body-font-family : 'futura-pt', sans-serif;
+$body-font-weight : $regular;
+$body-font-size   : 16px;
+$body-font-color  : $black;
+$body-line-height : 30px;
+
+// Heading Font
+// $heading-font-family : 'nimbus-sans-condensed', sans-serif;
+$heading-font-family : 'TradeGothicLT-BoldCondTwenty';
+
+// Easing
+$easeOutQuint: cubic-bezier(0.230, 1.000, 0.320, 1.000); 
+
+// Susy
+$susy: (
+	columns	: 12,
+);
+

@@ -1,0 +1,77 @@
+/* 
+
+-------------------------------------------------------------
+
+GLOBAL
+
+*/
+
+html, body { height:100%; }
+
+body { 
+	background:$gray-light;
+	padding:0px; 
+	margin:0px; 
+}
+
+body.body-modal-open { overflow:hidden; height:100%; }
+
+#viewport { 
+	overflow:hidden; 
+	width:100%; 
+}
+
+.container { 
+	margin:auto; 
+	width:1200px; 
+	position:relative; 
+
+	@include breakpoint(large) { 
+		width:800px;
+	}
+	@include breakpoint(medium) {
+		width:600px;
+	}
+	@include breakpoint(small) {
+		width:auto;
+		margin:auto 30px;
+	}
+}
+
+/* general */
+
+img { 
+	max-width:100%; 
+	margin-bottom:-9px;
+}
+
+.borderbox { 
+	box-sizing:border-box; 
+	-webkit-box-sizing:border-box; 
+	-moz-box-sizing:border-box; 
+}
+
+.row { @include clearfix; }
+
+.position-center {
+	position:absolute;
+	bottom:0px;
+	top:0px;
+	right:0px;
+	left:0px;
+	margin:auto;
+}
+
+* {
+	-webkit-appearance: none;
+	outline-width:0;
+	outline:none;
+}
+
+.hide-ipad {
+	@include breakpoint(medium) { display:none; }
+}
+
+.hide-mobile {
+	@include breakpoint(small) { display:none; }
+}

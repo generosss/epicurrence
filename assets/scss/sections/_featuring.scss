@@ -1,0 +1,179 @@
+/* 
+
+-------------------------------------------------------------
+
+FEATURING
+
+*/
+
+.featuring {
+	text-align:center;
+	position:relative;
+	padding-bottom:50px;
+
+	.brush {
+		@extend .position-center;
+		width:1400px / 1800px * 100%;
+		bottom:auto;
+		top:5%;
+		z-index:1;
+
+		@include breakpoint(large) { 
+			width:900px;
+			top:-100px;
+		}
+
+		@include breakpoint(medium) { 
+			width:700px;
+			top:0px;
+		}
+
+		@include breakpoint(small) { 
+			width:90%; 
+			top:auto;
+			top:20%;
+		}
+	}
+
+	a {
+		display:inline-block;
+		position:relative;
+		font-family:$heading-font-family;
+		font-size:55px;
+		line-height:45px;
+		background:$black;
+		padding:0px 5px;
+		padding-top:11px;
+		color:$gray-light;
+		margin-bottom:6px;
+		text-transform:uppercase;
+
+		@include breakpoint(medium) { 
+			font-size:40px;
+			line-height:35px;
+			padding-top:7px;
+		}
+
+		@include breakpoint(small) { 
+			font-size:30px;
+			line-height:30px;
+			padding-top:7px;
+		}
+
+		.avatar {
+			display:inline-block;
+			position:absolute;
+			top:0px;
+			width:56px;
+
+			@include breakpoint(medium) { 
+				width:40px;
+			}
+
+			@include breakpoint(small) { 
+				display:none;
+			}
+		}
+
+		.avatar-left {
+			left:-55px;
+
+			@include breakpoint(medium) { left:-40px; }
+		}
+
+		.avatar-right {
+			right:-55px;
+
+			@include breakpoint(medium) { 
+				right:-40px;
+			}
+		}
+
+		.type-shift {
+			display:inline-block;
+			margin-top:-3px;
+			vertical-align:top;
+
+			@include breakpoint(medium) { margin-top:-1px; }
+		}
+
+		.label {
+			display:inline-block;
+			position:absolute;
+			top:0px;
+			right:-300px;
+			width:300px;
+			font-family:$body-font-family; 
+			font-size:12px;
+			text-align:left;
+
+			@include breakpoint(small) { display:none; }
+
+			span {
+				@include transition(all 0.3s);
+				display:inline-block;
+				background:$black;
+				line-height:56px;
+				padding:0px 20px;
+				letter-spacing:2px;
+				vertical-align:top;
+
+				@include breakpoint(medium) { 
+					line-height:42px;
+					font-size:10px;
+				}
+			}
+		}
+
+		.label-left {
+			right:auto;
+			left:-300px;
+			text-align:right;
+		}
+	}
+
+	span.more {
+		display:inline-block;
+		font-family:$body-font-family; 
+		text-transform:uppercase;
+		font-size:12px;
+		line-height:71px;
+		background:$black;
+		padding:0px 20px;
+		letter-spacing:2px;
+		color:$gray-light;
+
+		@include breakpoint(medium) { 
+			line-height:58px;
+			font-size:10px;
+		}
+
+		@include breakpoint(small) { 
+			line-height:42px;
+			font-size:10px;
+		}
+	}
+
+	a:hover {
+		background:lighten($black, 20%);
+
+		.label {
+			span { 
+				padding:0px 35px;
+				color:$blue;
+				background:lighten($black, 20%); 
+			}
+		}
+	}
+
+	.container { z-index:2; }
+
+	.type-line {
+		margin-top:10px;
+		margin-bottom:50px;
+	}
+}
+
+.animate-in {
+
+}

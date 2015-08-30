@@ -1,0 +1,22 @@
+/* 
+
+-------------------------------------------------------------
+
+ALERT
+
+*/
+
+.alert {
+	background:rgba(0,0,0,0.1);
+	padding:10px;
+	font-weight:$bold;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	font-size:12px;
+	line-height:40px;
+	margin:30px 0px;
+}
+
+.success { background:#d2e6b3; }
+
+.fail { background:#e6b3b3; }

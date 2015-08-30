@@ -1,0 +1,146 @@
+/* 
+
+-------------------------------------------------------------
+
+GUEST
+
+*/
+
+.guest {
+	background:url(../img/guest-bg.jpg) top center no-repeat;
+	background-size:cover;
+	padding-bottom:1224px / 1800px * 100%;
+	position:relative;
+	z-index:0;
+
+	@include breakpoint(large) { 
+		padding-bottom:1424px / 1800px * 100%;
+	}
+
+	@include breakpoint(medium) { 
+		padding-bottom:1824px / 1800px * 100%;
+	}
+
+	@include breakpoint(small) { 
+		padding:100px 0px;
+	}
+
+	.content {
+		position:absolute;
+		height:100%;
+		width:100%;
+
+		@include breakpoint(small) { 
+			position:relative;
+			width:auto;
+		}
+	}
+
+	.container { height:100%; }
+
+	.who {
+		@extend .position-center;
+		right:auto;
+		height:350px;
+		width:60%;
+		color:#ffffff;
+		text-transform:uppercase;
+
+		@include breakpoint(large) { height:300px; }
+
+		@include breakpoint(small) { 
+			text-align:center;
+			height:auto;
+			line-height:22px;
+			position:relative;
+			top:auto;
+			right:auto;
+			width:100%;
+		}
+
+		span {
+			font-weight:$bold;
+			letter-spacing:2px;
+			line-height:50px;
+		}
+	}
+
+	.profile {
+		@extend .position-center;
+		left:auto;
+		width:378px / 1200px * 100%;
+		height:700px;
+		color:#ffffff;
+		line-height:24px;
+		text-align:justify;
+
+		@include breakpoint(large) { 
+			height:560px; 
+			line-height:22px;
+		}
+
+		@include breakpoint(small) { 
+			text-align:center;
+			height:auto;
+			line-height:22px;
+			position:relative;
+			top:auto;
+			right:auto;
+			width:100%;
+		}
+
+		.job {
+			margin-left:-18%;
+			width:120%;
+			padding-bottom:10px;
+
+			@include breakpoint(small) { 
+				margin:auto;
+				display:none;
+				width:50%; 
+			}
+		}
+	}
+
+	h2 {
+		color:#ffffff;
+		font-size:140px;
+		line-height:120px;
+
+		@include breakpoint(large) {
+			font-size:100px;
+			line-height:90px;
+		}
+
+		@include breakpoint(small) {
+			font-size:60px;
+			line-height:50px;
+		}
+	}
+
+	h3 {
+		color:#ffffff;
+		font-size:30px;
+		line-height:30px;
+
+		@include breakpoint(small) {
+			font-size:20px;
+			line-height:20px;
+		}
+	}
+
+	.type-line {
+		margin-left:0px;
+		margin:20px 0px;
+		margin-bottom:30px;
+		background:#ffc442;
+
+		@include breakpoint(small) {
+			margin:20px auto;
+		}
+	}
+
+	a { color:#ffffff; }
+
+	a:hover { color:$blue; }
+}

@@ -1,0 +1,48 @@
+/* 
+
+-------------------------------------------------------------
+
+ABOUT
+
+*/
+
+.about {
+	padding:100px 0px;
+	text-align:center;
+	font-size:17px;
+	position:relative;
+	z-index:5;
+
+	@include breakpoint(large) { 
+		padding-top:70px; 
+		font-size:16px;
+	}
+
+	@include breakpoint(small) {
+		font-size:14px;
+		line-height:24px;
+		padding-top:30px;
+	}
+
+	.info {
+		@include squish(3);
+
+		@include breakpoint(medium) { @include squish(2); }
+
+		@include breakpoint(small) { @include squish(1); }
+	}
+
+	a {
+		color:$black;
+		font-weight:$bold;
+	}
+
+	a:hover {
+		color:lighten($black, 50%);
+	}
+
+	.share {
+		line-height:11px;
+		height:20px;
+	}
+}

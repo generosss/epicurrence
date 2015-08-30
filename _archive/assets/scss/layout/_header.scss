@@ -1,0 +1,74 @@
+/* 
+
+-------------------------------------------------------------
+
+HEADER
+
+*/
+
+header {
+	position:relative;
+
+	.nav-bar {
+		@include transition(all 0.6s $easeOutQuint);
+		@include box-shadow(0px 0px 2px rgba(0,0,0,0.3));
+		background:$gray-light;
+		width:100%;
+		position:fixed;
+		top:-60px;
+		left:0px;
+		height:60px;
+		z-index:200;
+		overflow:hidden;
+
+		.container {
+			height:100%;
+			
+			@include breakpoint(medium) { 
+				width:auto;
+				margin:auto 30px;
+			}
+
+			@include breakpoint(small) {  margin:auto; }
+		}
+
+		.past-event {
+			@include transition(all 0.6s $easeOutQuint);
+			@include transition-delay(0.3s);
+			position:absolute;
+			left:0px;
+			top:60px;
+			width:200px;
+			height:200px;
+			opacity:0;
+		}
+
+		.past-event-2 {
+			@include transition-delay(0.4s);
+			left:230px;
+		}
+	}
+}
+
+header.active-past {
+	.nav-bar {
+		height:360px;
+
+		.past-event {
+			top:100px;
+			opacity:1;
+		}
+	}
+}
+
+/* Animate in */
+.animate-in {
+	.nav-bar {
+		top:0px;
+	}
+}
+
+/* Modal Open */
+.body-modal-open {
+	.nav-bar { @include box-shadow(0px 0px 2px rgba(0,0,0,0)); }
+}

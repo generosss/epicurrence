@@ -1,0 +1,75 @@
+/* 
+
+-------------------------------------------------------------
+
+FORMS
+
+*/
+
+.forms {
+	@include transition(all 0.3s);
+	@include border-radius(0px);
+	font-family:$body-font-family; 
+	font-weight:$body-font-weight;
+	font-size:$body-font-size;
+	-webkit-appearance: none;
+	outline:none;
+}
+
+.forms-size {
+	padding-top:10px;
+	display:block;
+
+	a {
+		background:rgba(255,255,255,0.5);
+		display:inline-block;
+		border:2px solid #e0e0e0;
+		padding:0px 10px;
+		margin:3px;
+		color:#a0a0a0;
+		font-weight:$bold;
+		letter-spacing:2px;
+		font-size:12px;
+	}
+
+	a:hover, a.active {
+		background:$yellow;
+		border:2px solid $black;
+		color:$black;
+	}
+}
+
+.forms-btn {
+	background:$yellow;
+	font-family:$heading-font-family; 
+	font-weight:$bold;
+	text-transform:uppercase;
+	border:none;
+	font-size:40px;
+	cursor:pointer;
+	height:43px;
+}
+
+.forms-btn:hover {
+	color:$black;
+	background:darken($yellow, 3%);
+}
+
+.forms-txt {
+	background:transparent;
+	color:#a0a0a0;
+	text-align:center;
+	text-transform:uppercase;
+	padding:15px 0px;
+	border:none;
+	width:100%;
+	border-bottom:2px solid #d0d0d0;
+	font-weight:$bold;
+	letter-spacing:2px;
+	font-size:12px;
+}
+
+.forms-txt:focus {
+	color:$black;
+	border-bottom:2px solid $black;
+}
