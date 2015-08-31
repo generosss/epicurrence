@@ -172,6 +172,18 @@ HERO
 
 		@include breakpoint(small) { display:none; }
 	}
+
+	.container {
+		@include breakpoint(small) {
+			width:400px;
+			margin:auto;
+		}
+
+		@include breakpoint(xsmall) {
+			width:auto;
+			margin:auto 30px;
+		}
+	}
 }
 
 .animate-in {

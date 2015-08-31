@@ -110,6 +110,9 @@
   @else if $point == small {
     @media (max-width: 767px)  { @content; }
   }
+  @else if $point == xsmall {
+    @media (max-width: 500px)  { @content; }
+  }
 }
 
 @mixin vertical-breakpoint($point) {

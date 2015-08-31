@@ -35,7 +35,7 @@ footer {
 		@extend .borderbox;
 		padding-right:140px;
 
-		@include breakpoint(small) { padding:0px; }
+		@include breakpoint(medium) { padding:0px; }
 	}
 
 	.share {
@@ -46,7 +46,7 @@ footer {
 		line-height:11px;
 		height:20px;
 
-		@include breakpoint(small) { 
+		@include breakpoint(medium) { 
 			position:relative;
 			left:auto;
 			top:auto;
@@ -57,6 +57,10 @@ footer {
 			vertical-align:top;
 			width:60px;
 			padding:0px;
+		}
+
+		span {
+			margin:0px 10px;
 		}
 	}
 
@@ -71,5 +75,5 @@ footer {
 		color:$blue;
 	}
 
-	span { margin:0px 10px; }
+	span { margin:0px 30px; }
 }

@@ -17,9 +17,18 @@ ABOUT
 		padding:0px;
 		text-transform:uppercase;
 		letter-spacing:2px;
-		font-size:13px;
 
-		@include breakpoint(medium) { font-size:12px; }
+		li {
+			font-size:12px;
+			line-height:18px;
+			padding-bottom:10px;
+		}
+
+		b {
+			@include breakpoint(large) { 
+				display:block;
+			}
+		}
 	}
 
 	.type-line {

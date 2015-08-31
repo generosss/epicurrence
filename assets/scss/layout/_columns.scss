@@ -37,8 +37,8 @@ $gutter  : 2.66%;
 .col-3 {
 	@extend .borderbox;
 	float:left;
-	width:378px / 1200px * 100%;
-	margin-left:$gutter;
+	width:350px / 1200px * 100%;
+	margin-left:6.25%;
 
 	@include breakpoint(small) { 
 		width:100%; 

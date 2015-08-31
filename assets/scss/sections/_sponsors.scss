@@ -16,10 +16,6 @@ SPONSORS
 
 	@include breakpoint(small) { padding-bottom:40px; }
 
-	.row {
-		border:1px solid #000000;
-	}
-
 	.sponsor {
 		display:inline-block;
 		width:15%;
@@ -34,7 +30,6 @@ SPONSORS
 
 	.sponsor-large {
 		width:25%;
-		border:1px solid #000000;
 
 		@include breakpoint(small) { 
 			margin:10px auto;
@@ -44,6 +39,18 @@ SPONSORS
 	}
 
 	.sponsor:hover { opacity:0.5; }
+
+	.container {
+		@include breakpoint(small) {
+			width:400px;
+			margin:auto;
+		}
+
+		@include breakpoint(xsmall) {
+			width:auto;
+			margin:auto 30px;
+		}
+	}
 }
 
 .animate-in {

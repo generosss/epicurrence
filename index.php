@@ -55,7 +55,7 @@
 			<nav class="list">
 				<a href="https://epicurrence.com/winter_2015">S. Lake Tahoe</a><br/>
 				<a href="https://epicurrence.com/winter_2015">North Shore Oahu</a><br/>
-				<a href="">Gallery</a><br/>
+				<a href="http://gallery.epicurrence.com/">Gallery</a><br/>
 				<a href="mailto:yell@dannpetty.com?subject=Sponsor Epicurrence">Sponsor</a><br/>
 				<a href="mailto:yell@dannpetty.com?subject=Epicurrence">Contact</a><br/>
 			</nav>
@@ -70,7 +70,7 @@
 
 					<div class="past-event"><a href="https://epicurrence.com/winter_2015"><img src="assets/img/logo-tahoe.png" alt="logo"/></a></div><!-- end .past-event -->
 
-					<div class="past-event past-event-2"><a href=""><img src="assets/img/logo-oahu.png" alt="logo"/></a></div><!-- end .past-event -->
+					<div class="past-event past-event-2"><a href="javascript:;"><img src="assets/img/logo-oahu.png" alt="logo"/></a></div><!-- end .past-event -->
 
 					<nav class="navigation">
 						
@@ -133,7 +133,7 @@
 				<div class="container">
 
 					<div class="row">
-						<a href="http://invisionapp.com/" class="sponsor sponsor-large" target="_blank"><img src="assets/img/sponsors/logo-billabong.jpg" alt="billabong"/></a>
+						<a href="http://billabong.com/" class="sponsor sponsor-large" target="_blank"><img src="assets/img/sponsors/logo-billabong.jpg" alt="billabong"/></a>
 						<a href="http://www.vivintsolar.com/" class="sponsor sponsor-large" target="_blank"><img src="assets/img/sponsors/logo-vivent.jpg" alt="vivent"/></a>
 					</div>
 
@@ -150,8 +150,8 @@
 						<a href="http://rideonewheel.com/" class="sponsor" target="_blank"><img src="assets/img/sponsors/logo-newheel.jpg" alt="newheel"/></a>
 						<a href="https://unsplash.com/" class="sponsor" target="_blank"><img src="assets/img/sponsors/logo-unsplash.jpg" alt="unsplash"/></a>
 						<a href="https://webflow.com/" class="sponsor" target="_blank"><img src="assets/img/sponsors/logo-webflow.jpg" alt="webflow"/></a>
-						<a href="" class="sponsor" target="_blank"><img src="assets/img/sponsors/logo-goflow.jpg" alt="goflow"/></a>
-						<a href="" class="sponsor" target="_blank"><img src="assets/img/sponsors/logo-av.jpg" alt="av"/></a>
+						<a href="https://goflow.me/" class="sponsor" target="_blank"><img src="assets/img/sponsors/logo-goflow.jpg" alt="goflow"/></a>
+						<a href="http://aviatornation.com/" class="sponsor" target="_blank"><img src="assets/img/sponsors/logo-av.jpg" alt="av"/></a>
 
 					</div><!-- end .row -->
 
@@ -210,7 +210,7 @@
 
 							<p>JOB is a pioneer in the field of professional freesurfing. Up until Jamie’s time, almost all professional surfers selfishly shared the same goal of qualifying for the World Tour and winning a title. JOB, however, is not like most people. Instead of grinding it out and trying to qualify, Jamie produced videos. A combination of his raw talent and assertive attitude resulted in a huge success for the films. And just like that, the career of a professional freesurfer was born.</p>
 
-							<p>More photos & video on <b><a href="http://redbull.com/" target="_blank">RedBull.com</a></b>.</p>
+							<p>More photos & video on <b><a href="http://www.redbull.com/us/en/surfing/athletes/1331575112009/jamie-o-brien" target="_blank">RedBull.com</a></b>.</p>
 
 						</div><!-- end .profile -->
 
@@ -287,8 +287,8 @@
 								<li><b>Chris Bierbower,</b> SONOS IxD DSGNR</li>
 								<li><b>Brandon Souba,</b> DROPBOX PROD DSGNR</li>
 								<li><b>Belinda Preno,</b> DROPBOX DSGNR</li>
-								<li><b>Rigel St. Peirre,</b> underbelly</li>
-								<li><b>Stephen Olmstead,</b> INVISION VP of R & P</li>
+								<li><b>Rigel St. Pierre,</b> underbelly</li>
+								<li><b>Stephen Olmstead,</b> INVISION VP OF R&P</li>
 								<li><b>Aaron Stump,</b> invision dsgnR</li>
 							</ul>
 
@@ -311,7 +311,7 @@
 								<li><b>Roni Eshel,</b> goflow fndr</li>
 								<li><b>Amber Cartwright,</b> airbnb dsgnR</li>
 								<li><b>Bek Stone,</b> airbnb dsgnR</li>
-								<li><b>Robin Cornuelle,</b> instrument strategist</li>
+								<li><b>Robin Cornuelle,</b> INSTRUMENT STGY</li>
 								<li><b>Ara Feducia,</b> FLUX HAWAII CD</li>
 								<li><b>Jason Simon,</b> chef</li>
 								<li><b>Rico Castillero,</b> photog</li>
@@ -433,7 +433,7 @@
 				<div class="brush"></div>
 
 				<div class="container">
-					©2015 <b>epicurrence, inc</b> <span>-</span> hosted by <a href="https://twitter.com/dannpetty" target="_blank">@DannPetty</a> <span>-</span> site dev by <a href="http://geneross.co/" target="_blank">@geneross</a> + <a href="https://twitter.com/rigelstpierre" target="_blank">@rigelstpierre</a> <span>-</span> <a href="mailto:yell@dannpetty.com">contact</a>
+					©2015 <b>epicurrence, inc</b> <span>|</span> hosted by <a href="https://twitter.com/dannpetty" target="_blank">@DannPetty</a> <span>|</span> site dev by <a href="http://geneross.co/" target="_blank">@geneross</a> + <a href="https://twitter.com/rigelstpierre" target="_blank">@rigelstpierre</a> <span>|</span> <a href="mailto:yell@dannpetty.com">contact</a>
 
 					<div class="share">
 						<a class="twitter-share-button" data-count="none" data-text="Stoked. @Epicurrence, the non-conference coming Oct 5-9 to the North Shore of Oahu!" href="https://twitter.com/share">Tweet</a><script type="text/javascript">window.twttr=(function(d,s,id){var t,js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return}js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);return window.twttr||(t={_e:[],ready:function(f){t._e.push(f)}})}(document,"script","twitter-wjs"));</script><div class="fb-share-button" data-href="http://epicurrence.com" data-layout="button"></div>
